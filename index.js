@@ -115,6 +115,12 @@ const execa = (file, args, options) => {
 		const all = handleOutput(parsed.options, allResult);
 
 		if (error || exitCode !== 0 || signal !== null) {
+			console.log('_EEEEEEEEE_')
+			console.log('error 0', error)
+			console.log('error 1', stdoutResult)
+			console.log('error 2', stderrResult)
+			console.log('error 3', allResult)
+			console.log('_EEEEEEEEE_')
 			const returnedError = makeError({
 				error,
 				exitCode,
